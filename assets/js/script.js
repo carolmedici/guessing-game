@@ -48,3 +48,10 @@ function changeTheme() {
        setColor('original-color');
    }
 }
+(function () {
+    if (localStorage.getItem('theme') === 'second-color') {
+        setColor('second-color');
+    } else {
+        setColor('original-color');
+    }
+ })();
