@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=J, initial-scale=1.0">
+    <title>Guessing Game</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <main>
+        <label id="change" class="change">
+            <input type="checkbox" onchange="changeTheme()" id="switch">
+            <span class="slider"></span>
+        </label>
+           
+        <div class="game">
+            <h1>Guessing Game</h1>
+            <p id="p">Hey! Let's play a game: guess a number from 0 to 10</p>
+            <form id="guess-number">
+                <input type="number" name="inumber" id="inumber">
+                <button id='guessNumber' type="submit">Submit</button>
+        </div>
+
+        <div class="result hide">
+            <h1>Guessing Game</h1>
+            <p class="p-win">You rock! You got it right in 2 tries :) </p>
+            <form>
+                <button id="playAgain" type="submit">Play Again</button>
+                 <img src="assets/images/winner.gif" alt="winner">      
+            </form>
+        </div>
+                </main>
+            </form>
+        <script src="assets/js/script.js"></script>
+</body>
+</html>
