@@ -106,8 +106,7 @@ button:hover {
   padding: 1rem 2rem;
   border-radius: 1rem;
   position: relative;
-  left: 15rem;
-  top: -5rem;
+  margin: -1rem -28rem -1rem 12rem;
 }
 
 .result form {
@@ -124,8 +123,7 @@ button:hover {
 .slider {
   position: absolute;
   cursor: pointer;
-  left: 95rem;
-  top: 13rem;
+
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.3s;
@@ -134,13 +132,19 @@ button:hover {
   border-radius: 3.4rem;
 }
 
+.change {
+  position: relative;
+  top: -6rem;
+  left: 33rem;
+}
+
 .slider:before {
   position: absolute;
   content: "";
   height: 1.6rem;
   width: 1.6rem;
   left: 2px;
-  bottom: 4px;
+
   top: 0;
   bottom: 0;
   margin: auto 0;
@@ -162,11 +166,24 @@ input:checked + .slider:before {
   border: 1px black;
 }
 
-img {
+#trophy {
   width: 10rem;
 
   position: relative;
   padding: 0;
-  top: -4rem;
-  left: 16rem;
+  margin: -9rem -5rem 1rem 33rem;
+}
+
+@media (min-width: 50rem) {
+  .change {
+    left: 39rem;
+  }
+  #playAgain {
+    margin: 0rem -24rem -1rem 15rem;
+  }
+}
+@media (min-width: 70rem) {
+  #playAgain {
+    margin: 0rem -24rem -1rem 15rem;
+  }
 }
